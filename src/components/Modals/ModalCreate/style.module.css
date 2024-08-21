@@ -1,0 +1,10 @@
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.period-error {
+    color: red;
+    font-size: 12px;
+}

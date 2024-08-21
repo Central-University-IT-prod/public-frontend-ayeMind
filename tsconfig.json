@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "types": [
+      "vite-plugin-pwa/react"
+    ],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["components/*"],
+      "hooks/*": ["shared/hooks/*"],
+      "layouts/*": ["shared/layouts/*"],
+      "pages/*": ["pages/*"],
+      "app/*": ["app/*"],
+      "widgets/*": ["widgets/*"],
+      "actions/*": ["shared/actions/*"],
+      "src/*": ["*"],
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "public/service-worker.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

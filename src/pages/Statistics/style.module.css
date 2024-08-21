@@ -1,0 +1,86 @@
+.avatar-container {
+    width: 125px;
+    height: 125px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer !important;
+}
+
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.heatmap-container {
+    position: relative;
+    margin-top: 15px;
+    padding: 0 15px;
+    height: 200px;
+    width: 750px;
+    overflow: hidden;
+}
+
+.text-container {
+    margin-top: 15px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-container > p {
+    font-size: 1rem;
+}
+
+.skeleton-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+}
+
+.skeleton-heatmap {
+    width: 730px !important;
+    height: 75% !important;
+    position: absolute !important;
+    border-radius: 25px !important;
+}
+
+.skeleton-hidden {
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .avatar-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .heatmap-container {
+        height: 150px;
+        width: 95%;
+        scrollbar-width: 1px;
+        overflow-x: scroll;
+    }
+
+    .text-container > p {
+        font-size: 0.9rem;
+    }
+
+    .skeleton-heatmap {
+        height: 100% !important;
+        border-radius: 0;
+    }
+
+    .user-name {
+        font-size: 0.8rem;
+    }
+}
